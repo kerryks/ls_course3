@@ -57,6 +57,7 @@
     "serialize-javascript": "^2.1.2",
     "signale": "^1.4.0",
     "vue": "^2.6.7",
-    "vue-router": "^3.0.2"
+    "vue-router": "^3.0.2",
+    "yarn": "^1.21.1"
   }
 }
