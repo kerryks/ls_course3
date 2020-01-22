@@ -1,0 +1,21 @@
+section.form
+  .container.container__form
+    .form__title
+      h2.section-title Связаться со мной
+      form.contact
+        .contact__wrapper.contact__wrapper--name
+          label.contact__label Введите ваше имя
+          .contact__icon-wrapper
+            +icon('user', 'contact__icon')
+          input.contact__input.contact__input--name(type ="text" name="name" placeholder="Ковальчук Дмитрий" onFocus="this.placeholder='';")
+        .contact__wrapper.contact__wrapper--email 
+          label.contact__label Введите ваш email
+          .contact__icon-wrapper
+            +icon('envelope', 'contact__icon')
+          input.contact__input.contact__input--email(type ="email" name="email" placeholder="Ковальчук Дмитрий" onFocus="this.placeholder='';")
+        .contact__wrapper.contact__wrapper--text
+          label.contact__label Сообщение к письму
+          .contact__icon-wrapper
+            +icon('message', 'contact__icon')
+          texterea.contact__input.contact__input--text(name="text" placeholder="Требуется ваша помощь в создании сайта.\nИнтересуют сроки и цена вопроса" onFocus="this.placeholder='';")
+        button.contact__submit-btn Отправить

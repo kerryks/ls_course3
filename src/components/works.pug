@@ -1,11 +1,11 @@
-- var tags=['HTML5', 'CSS3', 'Javascript'];
-- var sliderImages = [ ['4',''], ['3', ''], ['2', '']; ['1', 'slider__slide--sctive'] ];
+-var tags = ['HTML5', 'CSS3', 'Javascript'];
+-var sliderImages = [ ['4',''], ['3', ''], ['2', '']; ['1', 'slider__slide--sctive'] ];
 
 section.works
   .container.container--works
     .works__title
       h2.section-title Мои работы
-    .slider 
+    .slider
       .slider__content--left
         .slider__wrapper
           .slider__inner-wrapper
@@ -13,7 +13,7 @@ section.works
               +image('content/'+sliderImages[3][0]+'.jpg', 'slider__slide-image-img')
             .slider__slides
               each sliderImage in sliderImages
-                .slider__slide(xlass=`${sliderImage[1]}`)
+                .slider__slide(class=`${sliderImage[1]}`)
                   +image('content/'+sliderImage[0]+'.jpg', 'slider__slide-image')
               .slider__nav
                 .slider__nav-btn.slider__nav-btn--up
