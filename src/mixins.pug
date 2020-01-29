@@ -5,3 +5,10 @@ mixin icon(name, className)
 
 mixin image(path, className)
   img(src=require(`images/${path}`) class=className)
+
+mixin nav(mod, data)
+  nav(class='nav nav--'+mod)
+    ul.nav__list
+      each item in data
+        li.nav__item
+          a(href=`${item.link}`).nav__link #{item.title}
